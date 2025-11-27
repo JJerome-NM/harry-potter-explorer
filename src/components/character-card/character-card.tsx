@@ -1,8 +1,8 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "@ui-kit/card.tsx"
-import type { Character } from "../../api/characters/characters.types.ts"
 import { Link } from "react-router"
 import { routeConfig } from "@config/route.config.ts"
-import { CharacterImage } from "../character-image/character-image.tsx"
+import { CharacterImage } from "@components"
+import type { Character } from "../../api/characters/characters.types.ts"
 
 type Props = {
   data: Character
@@ -19,8 +19,8 @@ export const CharacterCard = ({ data }: Props) => {
         <CardHeader>
           <CardTitle>{data.name}</CardTitle>
           <CardDescription className="flex flex-col">
-            <span>Actor - {data.actor || "Unknown"}</span>
-            <span>Home - {data.house || "Unknown"}</span>
+            <p>Actor - {data.actor || "N/A"}</p>
+            <p>Home - {data.house || "N/A"}</p>
           </CardDescription>
         </CardHeader>
       </Card>

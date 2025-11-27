@@ -13,6 +13,11 @@
       "@app/*": ["src/app/*"],
       "@shared/*": ["src/shared/*"],
       "@config/*": ["src/config/*"],
+      "@config": ["src/config/index"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components/index"],
+      "@pages/*": ["src/pages/*"],
+      "@pages": ["src/pages/index"],
       "@ui-kit/*": ["src/shared/ui/kit/*"]
     }
   }

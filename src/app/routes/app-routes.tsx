@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router"
-import { RootLayout } from "../../components/root-layout/root-layout.tsx"
-import { HomePage } from "../../pages/home-page/home-page.tsx"
+import { RootLayout } from "@components/root-layout"
+import { HomePage } from "@pages/home-page"
 import { charactersRoutes } from "@app/routes/characters-routes.tsx"
+import { spellsRoutes } from "@app/routes/spells-routes.tsx"
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         path: "characters",
         children: charactersRoutes
+      },
+      {
+        path: "spells",
+        children: spellsRoutes
       }
     ]
   }

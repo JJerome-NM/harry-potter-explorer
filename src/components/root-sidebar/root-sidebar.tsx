@@ -11,7 +11,7 @@ import {
 import type { ReactNode } from "react"
 import { Users, WandSparkles } from "lucide-react"
 import { Link } from "react-router"
-import { routeConfig } from "../../config/route.config.ts"
+import { routeConfig } from "@config"
 
 type LinkItemOption = {
   label: string

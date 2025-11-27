@@ -1,13 +1,14 @@
 import type { RouteObject } from "react-router"
-import { CharactersPage } from "../../pages/characters-page/characters-page.tsx"
+import { CharacterDetailsPage, CharactersPage, ErrorPage } from "@pages"
 
 export const charactersRoutes: RouteObject[] = [
   {
     index: true,
-    element: <CharactersPage />
+    element: <CharactersPage />,
+    errorElement: <ErrorPage title="Oops! Wizards unavailable" />
   },
   {
     path: ":characterId",
-    element: <div>Character with id</div>
+    element: <CharacterDetailsPage />
   }
 ]

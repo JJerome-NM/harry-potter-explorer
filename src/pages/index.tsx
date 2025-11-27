@@ -1,0 +1,5 @@
+export { SpellsPage } from "./spells-page"
+export { HomePage } from "./home-page"
+export { ErrorPage } from "./error-page"
+export { CharactersPage } from "./characters-page"
+export { CharacterDetailsPage } from "./character-details-page"
