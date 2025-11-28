@@ -18,10 +18,10 @@ export const CharacterDetails = () => {
   const characterAlternateNames = !!character.alternate_names?.length && character.alternate_names.join(", ")
 
   return (
-    <div className="p-4 md:p-6 max-w-4xl w-full">
+    <div className="p-3 max-w-4xl w-full">
       <article className="flex flex-col md:flex-row gap-6 animate-in fade-in duration-500">
         <div className="shrink-0">
-          <div className="w-full max-w-72 sm:w-72 aspect-3/4 overflow-hidden rounded-xl">
+          <div className="w-full border max-w-72 sm:w-72 aspect-3/4 overflow-hidden rounded-xl">
             <CharacterImage
               src={character.image}
               alt={character.name}
