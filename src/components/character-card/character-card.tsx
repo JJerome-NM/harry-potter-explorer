@@ -11,7 +11,7 @@ type Props = {
 export const CharacterCard = ({ data }: Props) => {
   return (
     <Link to={routeConfig.characters.character(data.id)}>
-      <Card className="pt-0 overflow-hidden">
+      <Card className="pt-0 overflow-hidden hover:bg-muted transition-colors">
         <CharacterImage
           src={data.image}
           alt={data.name}

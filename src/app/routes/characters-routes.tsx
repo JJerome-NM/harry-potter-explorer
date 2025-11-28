@@ -9,6 +9,7 @@ export const charactersRoutes: RouteObject[] = [
   },
   {
     path: ":characterId",
-    element: <CharacterDetailsPage />
+    element: <CharacterDetailsPage />,
+    errorElement: <ErrorPage title="Could not load character details. The wizard might be hiding" />
   }
 ]
